@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Declaración</title>
+    <link rel="stylesheet" href="programita.css">
+    <link rel="stylesheet" href="carta.css">
+</head>
+<body>
+
+        
+    
+    <div class="contenedor">
+        <img src="../programita/euu.jpg" alt="" width="200" height="200">
+        <p>¿te comprometes a hacer todo lo que yo diga de ahora en adelante?</p>
+        <button id="yesBtn">Sí</button>
+        <button id="noBtn">No</button>
+        
+    </div>
+
+    <!-- Contenedor de la carta -->
+    <div id="carta" class="carta-container" style="display: none;"> <!-- Inicialmente oculta -->
+        <div class="container-letter">
+            <div class="cover"></div>
+            <span class="heart">♥</span>
+            <p class="paper" id="mainMessage">
+                primer año de tormento, y los que faltan...
+            </p>
+            <div class="letter"></div>
+        </div>
+        <div class="options">
+            <button id="open">Abrir</button>
+            <button id="close">Cerrar</button>
+           
+            <a href="flor.html" style="color:pink;" style="font-size: 200;">Recoger flor</a>
+        </div>
+    </div>
+
+    <script src="programita.js"></script>
+    <script src="carta.js"></script>
+</body>
+</html>

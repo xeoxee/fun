@@ -1,0 +1,66 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Contenedor principal */
+.contenedor {
+    background: cadetblue;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+p {
+    font-size: xx-large;
+    margin-bottom: 20px;
+}
+
+button {
+    font-size: xx-large;
+    padding: 0.75em;
+    margin: 10px;
+    cursor: pointer;
+}
+
+#yesBtn {
+    transform: translate(-100%, 0);
+}
+
+#noBtn {
+    position: absolute;
+}
+
+/* Oculta el contenedor de la carta inicialmente */
+.carta-container {
+    display: none; /* Oculta la carta inicialmente */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor button {
+    margin-top: 10px;
+}
+
+.carta-container .container-letter .paper {
+    transform: translateY(-20px);
+    transition: transform 0.3s ease-in-out;
+}
+
